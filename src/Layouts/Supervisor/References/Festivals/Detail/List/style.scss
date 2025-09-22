@@ -1,0 +1,224 @@
+.festivals-detail-main {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+
+    &__head,
+    &__list {
+        border-radius: 10px;
+        box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.10);
+
+        .p-card-body {
+            width: 100%;
+            padding: 24px;
+
+            .p-card-content {
+                padding: 0;
+            }
+        }
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    &__head-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .page-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__breadcrumb {
+            border: none;
+            padding: 0;
+
+            li {
+                span {
+                    color: #818EA1;
+                    font-family: Object Sans;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21px;
+                }
+            }
+
+            svg {
+                width: .5rem;
+                height: .5rem;
+                margin-bottom: 4px;
+            }
+        }
+
+        &__title-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+
+            .p-tag-success {
+                border-radius: 6px;
+                background: #F3FBFB;
+                color: #14B8A6
+            }
+
+            .p-tag-danger {
+                border-radius: 6px;
+                background: #FFF5F5;
+                color: #FF3D32
+            }
+
+            .p-tag-info {
+              border-radius: 6px;
+              background: var(--blue-50);
+              color: var(--blue-400);
+            }
+            
+            .p-tag-warning {
+              border-radius: 6px;
+              background: var(--orange-50);
+              color: var(--orange-400);
+            }
+        }
+
+        &__title {
+            color: #495057;
+            font-family: Mabry Pro;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 34px;
+            margin-right: 12px;
+        }
+
+        &__description {
+            color: #495057;
+            font-family: Object Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            margin-bottom: 20px;
+        }
+
+        &__head-actions {
+            display: flex;
+            flex-wrap: nowrap;
+
+            .p-button {
+                margin-left: 12px;
+
+                &.p-button-info {
+                    color: #1B3F86;
+                }
+
+                &.p-button-danger {
+                    color: #E50076;
+                }
+            }
+        }
+    }
+
+    &__dialog-del,
+    &__dialog-reject {
+        font-family: Object Sans;
+        font-size: 14px;
+        font-style: normal;
+
+        line-height: 17px;
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    &__dialog-del {
+        color: #FFF;
+        border-radius: 6px;
+        border: 1px solid #E50076;
+        background: #E50076;
+    }
+
+    &__dialog-reject {
+        color: #1B3F86;
+        background: unset;
+        border: none;
+    }
+
+    .head-list-item {
+        border-radius: 6px;
+        background: #F6F9FC;
+        box-shadow: none;
+
+        &__title {
+            color: #495057;
+            font-family: Object Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 4px;
+        }
+
+        &__subtitle {
+            color: #818EA1;
+            font-family: Object Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+        }
+
+        &>.p-card-body {
+            padding: 12px 16px;
+        }
+
+        .p-card-content {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+
+    .list-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #DFE7EF;
+        transition: .2s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: .8;
+        }
+
+        &:last-child {
+            margin: 0;
+            padding: 0;
+            border-bottom: none;
+        }
+
+        &__title {
+            color: #495057;
+            font-family: Object Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            margin-bottom: 2px;
+        }
+    }
+}

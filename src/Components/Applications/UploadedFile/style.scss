@@ -1,0 +1,113 @@
+.uploaded-file {
+  display: flex;
+  padding: 1.5rem 1.5rem 2.25rem 1.5rem;
+  align-items: flex-start;
+  grid-gap: 0.625rem;
+  align-self: stretch;
+
+  .uploaded-file-row {
+    display: flex;
+    padding-right: 0;
+    align-items: center;
+    grid-gap: 0.5rem;
+    align-self: stretch;
+    width: 100%;
+
+    border-radius: 0.375rem;
+    border: 1px solid var(--lara-root-surface-border);
+
+    &.svr {
+      padding: 0;
+      border: none;
+    }
+
+    .uploaded-file-col {
+      display: flex;
+      align-items: center;
+      grid-gap: 0.75rem;
+
+      &.svr {
+        width: 100%;
+        padding: 1rem 0 0;
+        justify-content: center;
+      }
+
+      &.first {
+        width: 90%;
+        @media screen and (max-width: 600px) {
+          width: 70%;
+          height: 2.8125rem;
+        }
+
+      }
+
+      .uploaded-file-button {
+        display: flex;
+        width: 1rem;
+        height: 1rem;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+
+        color: #9FA9B7;
+
+        cursor: pointer;
+      }
+
+      .uploaded-file-col-text {
+        display: flex;
+        align-items: flex-start;
+        flex: 1 0 0;
+
+        width: 80%;
+        color: var(--lara-global-text-secondary-color);
+        font-family: Inter, sans-serif;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+
+        @media screen and (max-width: 600px) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      .p-tag {
+        display: flex;
+        padding: 0.21875rem 0.35rem;
+        align-items: flex-start;
+        grid-gap: 0.21875rem;
+
+        border-radius: 0.375rem;
+        background: var(--lara-root-surface-ground, #EFF3F8);
+
+        color: var(--lara-blue-gray-bluegray-400, #818EA1);
+
+        font-family: Inter, sans-serif;
+        font-size: 0.65625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.7875rem;
+
+        .p-tag-icon {
+          font-size: 1rem;
+          margin-right: 0;
+          margin-left: 0.45rem;
+        }
+
+        &.with-icon{
+          width: 2.8125rem;
+          height: 2.8125rem;
+          border-radius: 0;
+          align-items: center;
+          font-size: 0.95625rem;
+          justify-content: center;
+          border-right: 1px solid var(--lara-root-surface-border);
+        }
+      }
+    }
+  }
+}

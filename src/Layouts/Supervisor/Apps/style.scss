@@ -1,0 +1,135 @@
+.svr {
+
+    .apps {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &>div {
+            width: 100%;
+        }
+
+        .top {
+            padding: 1.5rem 0 0;
+
+            .archived {
+              color: var(--lara-surface-surface-400, #BDBDBD) !important;
+            }
+
+            .title {
+                padding: 0 1.5rem;
+            }
+        }
+
+        .apps-list {
+            height: calc(100% - 3rem);
+            overflow: hidden;
+
+            .list-row {
+                height: 3.5rem;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #DFE7EF;
+                font-size: .875rem;
+
+                &.urgent {
+                    background: #FFF5F5;
+
+                    .cell {
+                        i.time {
+                            color: #FF3D32;
+                        }
+                    }
+                }
+
+                &.list-top {
+                    background: #D0E1FD;
+                    font-weight: 800;
+
+                    .cell {
+                        color: #3B82F6;
+                    }
+                }
+
+                &.search {
+                    height: 4.5rem;
+
+                    .p-inputtext {
+                      padding-left: 24px;
+                    }
+
+                    .pi-search {
+                      margin: 0;
+                      transform: translateY(-50%);
+                      left: 8px;
+                    }
+                }
+
+                &.item {
+                    transition: all .35s ease-in-out;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #F5F9FF;
+
+                        .logging__events {
+                          background: #F5F9FF;
+                        }
+                    }
+                }
+
+                .cell {
+                    box-sizing: border-box;
+                    width: 19%;
+                    padding: 0 1.2rem;
+                    color: #495057;
+
+                    span {
+                      cursor: pointer;
+
+                      .pi {
+                        font-size: 0.75rem;
+                      }
+                    }
+
+                    i.time {
+                        font-style: normal;
+                        color: #818EA1;
+                    }
+
+                    .muted {
+                        color: #818EA1;
+                    }
+
+                    &.mean {
+                        width: 62%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    &.full {
+                        width: 100%;
+
+                        &>.p-input-icon-right {
+                            width: 100%;
+
+                            input {
+                                width: 100%;
+                                height: 42px;
+                                font-size: .85rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .p-paginator {
+          background: inherit;
+          border: 0;
+        }
+    }
+}

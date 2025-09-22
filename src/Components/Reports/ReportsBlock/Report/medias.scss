@@ -1,0 +1,154 @@
+.reports-block {
+
+    @media screen and (max-width: 600px) {
+        padding-bottom: 5rem;
+
+        .title-block {
+            flex-direction: column;
+            padding: 1rem 0 0;
+
+            .title {
+                line-height: 1.75rem;
+                padding: 0 1rem;
+
+                span {
+                    font-size: .85rem;
+                    line-height: 1rem;
+                    margin-top: .25rem;
+                }
+            }
+
+            .points {
+                width: 100%;
+
+                span {
+                    white-space: nowrap;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .accordion {
+
+            .p-accordion-tab {
+                margin-bottom: 0;
+            }
+
+            .p-accordion-header {
+                .p-accordion-header-link {
+                    padding: 1rem 1.25rem;
+
+                    .pi {
+                        font-size: .85rem;
+                    }
+                }
+
+                .p-accordion-header-text {
+                    padding-right: 0;
+                }
+
+                .accordion-points {
+                    width: 30%;
+                    justify-content: flex-end;
+
+                    .report-points {
+                        white-space: nowrap;
+                    }
+                }
+
+                .accordion-text {
+                    font-size: .85rem;
+                    width: 70%;
+                }
+            }
+        }
+
+        .report-form {
+            grid-gap: 1.5rem 1rem;
+
+            .report-form-block {
+
+                .report-form-field.sm {
+                    width: 100%;
+                }
+
+                .report-form-field-title {
+                    flex-direction: column;
+                }
+
+                &.row {
+                    flex-direction: column;
+                    grid-gap: 1rem;
+
+                    &>div {
+                        width: 100%;
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .report-form-btn {
+                width: 100%;
+            }
+        }
+
+        .reports-next-stage-block {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            flex-direction: column-reverse;
+            padding: 0.75rem 1rem;
+            z-index: 999;
+
+            &>div {
+                width: 100% !important;
+
+                .p-button {
+                    width: 100%;
+                }
+
+                &.reports-next-stage-text {
+                    font-size: .75rem;
+                    text-align: center;
+                    padding-top: .5rem;
+                    border-top: 1px solid #DFE7EF;
+                }
+
+                &.reports-next-stage-btn-block {
+                    padding-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+
+.p-dialog-mask {
+
+    @media screen and (max-width: 600px) {
+        padding: 2rem;
+    }
+}
+
+.send-report {
+
+    @media screen and (max-width: 600px) {
+
+        .actions {
+            width: 100%;
+
+            button {
+                width: 100% !important;
+            }
+        }
+
+        .p-fileupload {
+            width: 100%;
+        }
+    }
+}

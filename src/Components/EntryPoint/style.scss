@@ -1,0 +1,301 @@
+.entrypoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../../assets/entrypoint/1920.jpg');
+    background-size: cover;
+    background-position: right center;
+
+    @media screen and (max-width: 1440px) {
+        background-image: url('../../assets/entrypoint/1440.jpg');
+        justify-content: flex-end;
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+        min-height: 83rem;
+        background-image: url('../../assets/entrypoint/1024.jpg');
+        background-position: bottom center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    @media screen and (max-width: 600px) {
+      min-height: 120vh;
+      background-image: url('../../assets/entrypoint/375.jpg');
+      background-position: bottom center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    @media screen and (max-width: 500px) {
+      min-height: 145vh;
+    }
+
+    @media screen and (max-width: 600px) and (max-height: 750px) {
+      min-height: 150vh;
+    }
+
+    @media screen and (max-width: 300px) {
+      min-height: 180vh;
+    }
+
+    .container {
+        width: 1280px;
+
+        @media screen and (max-width: 1280px) {
+            width: 1080px;
+        }
+
+        @media screen and (max-width: 1024px) and (orientation: portrait) {
+            width: 620px;
+            padding-top: 4rem;
+        }
+
+        @media screen and (max-width: 600px) {
+          width: 90vw;
+          padding-top: 0;
+        }
+
+        .cta {
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media screen and (max-width: 1024px) and (orientation: portrait) {
+              width: 620px;
+            }
+
+            @media screen and (max-width: 600px) {
+              width: 90vw;
+              padding-top: 2rem;
+            }
+
+            .text {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              grid-gap: 1.25rem;
+
+              img {
+                width: 310px;
+
+                @media screen and (max-width: 1024px) and (orientation: portrait) {
+                  width: 240px;
+                }
+
+                @media screen and (max-width: 600px) {
+                  width: 100px;
+                }
+
+                @media screen and (max-width: 375px) {
+                  width: 80px;
+                }
+              }
+
+              .title {
+                font-family: 'Mabry Pro', sans-serif;
+                color: #fff;
+                font-weight: 900;
+                font-size: 2.8rem;
+                text-align: center;
+                margin-top: 1.5rem;
+                line-height: 1;
+
+                @media screen and (max-width: 600px) {
+                  margin-top: 0rem;
+                  font-size: 1.23125rem;
+                }
+              }
+
+              .description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-gap: 0.375rem;
+
+                color: #FFF;
+                text-align: center;
+                font-family: Object Sans, sans-serif;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 1.25rem;
+
+                @media screen and (max-width: 1024px) and (orientation: portrait) {
+                  flex-direction: row;
+                  text-align: left;
+                  grid-gap: 0.375rem;
+                }
+
+                @media screen and (max-width: 600px) {
+                  text-align: center;
+                  flex-direction: column;
+                }
+
+                span {
+                  color: var(--lara-blue-blue-100, #D0E1FD);
+                  font-weight: 400;
+                }
+              }
+            }
+
+            .support {
+              color: var(--lara-blue-blue-100, #D0E1FD);
+              text-align: center;
+              font-family: Object Sans, sans-serif;
+              font-size: 0.875rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1.3125rem;
+              margin-top: 1.25rem;
+
+              span {
+                color: var(--lara-surface-surface-0, #FFF);
+                font-family: Object Sans, sans-serif;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 1.3125rem;
+              }
+            }
+
+            .buttons {
+              margin-top: 2.5rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 0.75rem;
+              align-self: stretch;
+
+              @media screen and (max-width: 600px) {
+                margin-top: 1.5rem;
+              }
+
+              .button-group {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 0.75rem;
+                align-self: stretch;
+
+                @media screen and (max-width: 600px) {
+                  flex-direction: column;
+                  width: 100%;
+                }
+
+                .p-button-sm {
+                  display: flex;
+                  padding: 0.65625rem 1.09375rem;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 0.875rem;
+                  flex: 1 0 0;
+                  border-radius: 0.375rem;
+
+                  color: var(--lara-surface-surface-0, #FFF);
+                  font-family: Object Sans, sans-serif;
+                  font-size: 0.875rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 1.0625rem;
+
+                  @media screen and (max-width: 600px) {
+                    align-self: stretch;
+                    min-height: 2.12rem;
+                  }
+
+                  &:focus {
+                    box-shadow: none;
+                  }
+
+                  &.positive {
+                    background: #0AD9B3;
+                    border-color: #0AD9B3;
+                  }
+
+                  &.negative {
+                    background: #E50076;
+                    border-color: #E50076;
+                  }
+
+                  &.tutor {
+                    background: #F5F9FF;
+                    border-color: #F5F9FF;
+                    color: var(--lara-blue-blue-700);
+                  }
+
+                  .p-button-label {
+                    font-size: .875rem;
+                    font-weight: 400;
+                    font-family: 'Object Sans', sans-serif;
+                  }
+                }
+              }
+            }
+        }
+    }
+
+    .mobile-content {
+      display: flex;
+      width: 90vw;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-gap: 1rem;
+      margin-top: 1.13rem;
+
+      .block {
+        display: flex;
+        padding: 1.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+
+        border-radius: 0.375rem;
+        background: #FFF;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.10);
+
+        @media screen and (max-height: 800px) {
+          padding: 0.75rem 0.75rem;
+        }
+
+        .block-text {
+
+          .title {
+            color: var(--lara-global-text-color);
+            text-align: center;
+            font-family: Object Sans, sans-serif;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+
+            @media screen and (max-height: 860px) {
+              font-size: 0.775rem;
+            }
+          }
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          grid-gap: 0.75rem;
+          flex: 1 0 0;
+          color: var(--lara-blue-gray-bluegray-400, #818EA1);
+          font-family: Object Sans, sans-serif;
+          font-size: 0.775rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 0.95rem;
+
+          @media screen and (max-height: 860px) {
+            grid-gap: 0.45rem;
+            font-size: 0.675rem;
+            line-height: .85rem;
+          }
+        }
+      }
+    }
+}

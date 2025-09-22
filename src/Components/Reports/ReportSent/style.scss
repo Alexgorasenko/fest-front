@@ -1,0 +1,97 @@
+.report-sent {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-gap: 1.0625rem;
+  align-self: center;
+
+  .status-block {
+    display: flex;
+    width: 70vw;
+    padding: 3.125rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+
+    border-radius: 0.5rem;
+    background: #FFF;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.10);
+
+    .title-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 1.25rem;
+
+      i {
+        color: #0AD9B3;
+        font-size: 3.125rem;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        grid-gap: 0.5rem;
+
+        color: var(--lara-global-text-color, #495057);
+        text-align: center;
+        font-family: Mabry Pro, sans-serif;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 2.125rem;
+
+        span {
+          color: var(--lara-global-text-secondary-color, #6C757D);
+          text-align: center;
+          font-family: Object Sans, sans-serif;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  .attention {
+    display: flex;
+    width: 70vw;
+    padding: 1.25rem 1.5rem 1.875rem 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 0.125rem;
+
+    border-radius: 0.5rem;
+    background: var(--lara-surface-surface-0);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.10);
+
+    color: var(--lara-blue-gray-bluegray-300, #9FA9B7);
+    text-align: center;
+    font-family: Object Sans, sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.05rem;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 0.5rem;
+      align-self: stretch;
+
+      color: var(--lara-global-text-secondary-color);
+      font-family: Object Sans, sans-serif;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.svr {
+    font-family: 'Object Sans', sans-serif;
+    //height: 100vh;
+    box-sizing: border-box;
+    padding-left: 18.3125rem;
+
+    &>div:not(.sidebar) {
+        width: calc(100%);
+        box-sizing: border-box;
+        padding: 3rem 3.6rem;
+
+        &.apps {
+            width: 100%;
+            min-width: 1007px;
+        }
+    }
+
+    .title {
+        font-size: 1.75rem;
+        color: var(--lara-global-text-color);
+        font-weight: 900;
+        font-family: 'Marby Pro', sans-serif;
+
+        &._sub {
+            font-family: 'Object Sans', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+
+        &._tretiary {
+            font-size: 1rem;
+            color: #6C757D;
+            font-weight: 800;
+            font-family: 'Object Sans', sans-serif;
+        }
+    }
+
+    .title_disclaimer {
+        font-size: .875rem;
+        color: #818EA1;
+        margin-top: .25rem;
+    }
+
+    .non-ideal-alert {
+        background: #F6F9FC;
+        border-radius: .75rem;
+        margin-bottom: 1.5rem;
+        box-sizing: border-box;
+        padding: .75rem 1rem;
+
+        .message {
+            font-size: .875rem;
+            font-weight: 800;
+            color: #6C757D;
+            margin-bottom: .5rem;
+
+            .pi {
+                margin-left: .5rem;
+                transform: translateY(.1rem);
+                color: #F97316;
+            }
+        }
+
+        .notice {
+            font-size: .75rem;
+            color: #6C757D
+        }
+    }
+
+    .panel {
+        background: #fff;
+        border-radius: .75rem;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, .1);
+    }
+
+    .p-tabmenu {
+        font-family: 'Object Sans', sans-serif;
+
+        .p-tabmenu-nav {
+            border-bottom-left-radius: .75rem;
+            border-bottom-right-radius: .75rem;
+
+            .p-menuitem-link {
+                padding: 1.25rem 1.5rem;
+                font-weight: 800;
+
+                i {
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+                &:focus {
+                    box-shadow: none !important;
+                }
+            }
+
+            .p-tabmenuitem.p-highlight {
+
+                .p-menuitem-link {
+                    color: #3B82F6;
+                    border-color: #3B82F6;
+                }
+            }
+        }
+    }
+
+    .p-button-sm {
+        padding: .65rem 2rem .55rem;
+
+        &.positive {
+            background: #0AD9B3;
+            border-color: #0AD9B3;
+        }
+
+        &.negative {
+            background: #E50076;
+            border-color: #E50076;
+        }
+
+        .p-button-label {
+            font-size: .875rem;
+            font-weight: 400;
+            font-family: 'Object Sans', sans-serif;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.archive-svr {
+  padding: 0 !important;
+
+  &__loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pi-spinner {
+    font-size: 48px;
+    color: #3B82F6;
+  }
+}

@@ -1,0 +1,47 @@
+@import '../fonts/objectSans/stylesheet.css';
+@import '../fonts/mabryPro/stylesheet.css';
+
+:root {
+  --lara-global-text-secondary-color: #6C757D;
+  --lara-global-text-color: #495057;
+  --lara-theme-primary-color: #1B3F86;
+  --lara-input-field-input-placeholder-text-color: #6C757D;
+  --lara-input-field-input-border: #CED4DA;
+  --lara-input-field-input-bg: #FFF;
+  --lara-button-button-border: #1B3F86;
+  --lara-button-button-bg: #1B3F86;
+  --lara-checkbox-checkbox-active-border-color: #1B3F86;
+  --lara-checkbox-checkbox-active-bg: #1B3F86;
+  --lara-toggle-button-toggle-button-active-border-color: #1B3F86;
+  --lara-toggle-button-toggle-button-active-bg: #1B3F86;
+  --lara-surface-surface-0: #FFF;
+  --lara-button-button-text-color: #FFF;
+  --lara-root-surface-border: #DFE7EF;
+  --lara-blue-blue-50: #F5F9FF;
+  --lara-blue-blue-200: #ABC9FB;
+  --lara-blue-blue-400: #5485D6;
+  --lara-blue-blue-700: #3058A7;
+  --lara-button-danger-button-bg: #E50076;
+  --lara-button-danger-button-border: #E50076;
+  --lara-severities-success-message-text-color: #1EA97C;
+}
+
+body {
+  margin: 0;
+
+  .p-button {
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .p-inputtext, .p-password {
+    &:enabled:focus {
+      border: 1px solid var(--lara-button-button-border) !important;
+      box-shadow: none !important;
+    }
+  }
+  .p-password-input, .p-icon-field {
+    width: 100%;
+  }
+}

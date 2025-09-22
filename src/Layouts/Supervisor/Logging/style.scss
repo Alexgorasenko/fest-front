@@ -1,0 +1,178 @@
+.logging {
+  display: flex;
+  justify-content: flex-start !important;
+
+  &__header {
+    display: flex;
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: .25rem;
+    align-self: stretch;
+
+    border-radius: .625rem;
+    background: #FFF;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .10);
+  }
+
+  &__title {
+    color: #495057;
+    font-family: "Mabry Pro", sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.125rem;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    grid-gap: 0.625rem;
+    align-self: stretch;
+  }
+
+  &__download-btn {
+    display: flex;
+    padding: .53125rem 1.09375rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: .375rem;
+    border: 1px solid #1B3F86;
+    background: #1B3F86;
+
+    .p-button-label {
+      color: #FFF;
+      font-family: "Object Sans", sans-serif;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.0625rem;
+    }
+
+    .pi {
+      font-size: 0.875rem;
+    }
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    width: 10% !important;
+  }
+
+  .list-row {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .secondary {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mean {
+    width: 33% !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+    white-space: wrap !important;
+  }
+
+  .apps-list {
+    height: max-content !important;
+  }
+
+  &__calendar {
+    .p-inputtext {
+      border-right: none;
+      width: 13rem;
+      padding-right: 0;
+
+      &:hover {
+        border-color: #CED4DA !important;
+      }
+    }
+
+    .p-datepicker-trigger {
+      background: none;
+      border-color: #CED4DA;
+      border-left: none;
+      color: #6C757D;
+    }
+
+    &.p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext {
+      box-shadow: none;
+      border-color: #CED4DA;
+    }
+
+    .p-inputtext:enabled:focus {
+      border-right: none !important;
+      border-color: #CED4DA !important;
+    }
+  }
+
+  &__events {
+    border: none !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+    background: white;
+    align-items: flex-start;
+    justify-content: flex-start !important;
+    text-align: start;
+
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      box-orient: vertical;
+    }
+
+  }
+}
+
+.patch-table {
+  display: flex;
+  flex-direction: column;
+  grid-gap: .75rem;
+  width: 100%;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .75rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__key {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    //width: 40%;
+    //min-width: max-content;
+    //white-space: nowrap;
+  }
+
+  &__value {
+    display: flex;
+    justify-content: flex-start;
+    //width: 60%;
+    text-align: start;
+  }
+}

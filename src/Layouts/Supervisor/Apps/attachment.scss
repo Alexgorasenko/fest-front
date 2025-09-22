@@ -1,0 +1,71 @@
+.react-pdf__Page {
+    min-width: unset !important;
+    min-height: unset !important;
+}
+
+.react-pdf__Page__textContent, .annotationLayer {
+    display: none;
+}
+
+.p-dialog {
+    .react-pdf__Page {
+        min-width: 100% !important;
+        min-height: min-content !important;
+
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
+
+.react-pdf__Document {
+  max-width: 100%;
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.attachment {
+  width: 100%;
+}
+
+.attachment-btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  grid-gap: .65rem;
+  cursor: default;
+
+  &__button {
+    padding: .65rem .65rem;
+    border-radius: 0.375rem;
+
+    color: var(--lara-surface-surface-0);
+
+    .pi {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.0625rem;
+    }
+
+    background: var(--lara-button-button-bg);
+  }
+}
+
+.attachment__image-container {
+  padding: 1rem 8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+}

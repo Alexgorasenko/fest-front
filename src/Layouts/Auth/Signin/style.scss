@@ -1,0 +1,13 @@
+.forgot {
+  color: var(--lara-theme-primary-color);
+  font-family: Object Sans, sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    align-self: center;
+  }
+}

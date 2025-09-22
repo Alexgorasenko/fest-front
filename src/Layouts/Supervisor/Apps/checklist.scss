@@ -1,0 +1,99 @@
+.checklist {
+    .title {
+        margin-bottom: 1.5rem;
+    }
+
+    .checklist-section {
+        padding: 1.5rem 0;
+        border-top: 1px solid #DFE7EF;
+
+        .checklist-section_head {
+            display: flex;
+            gap: .75rem;
+            align-items: center;
+
+            .p-checkbox {
+                margin-left: 3px;
+            }
+
+            label {
+                font-weight: 800;
+                color: #6C757D;
+                font-size: 1rem;
+            }
+        }
+
+        .checklist-section_body {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+
+            .checklist-section_row {
+                display: flex;
+                gap: .75rem;
+
+                .p-checkbox {
+                    margin-left: 3px;
+                }
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25rem;
+                    font-size: .875rem;
+                    color: #495057;
+                    width: 100%;
+
+                    .pi {
+                        margin-left: .5rem;
+                        transform: translateY(.1rem);
+                        color: #F97316;
+                    }
+
+                    .strong {
+                        display: flex;
+                        flex-direction: column;
+                        font-weight: 800;
+                        color: #6C757D;
+                        gap: .15rem;
+
+                        &>span {
+                            font-weight: 400;
+                        }
+                    }
+
+                    i {
+                        color: #818EA1;
+                        font-style: normal;
+                    }
+                }
+
+                .checklist-section_row_values {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25rem;
+                    padding-top: .75rem;
+                    width: 100%;
+
+                    .checklist-section_row_values_label {
+                        font-weight: 800;
+                        color: #6C757D;
+                    }
+
+                    .checklist-section_row_values_grid {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .checklist-section_row_values_cell {
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: .25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

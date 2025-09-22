@@ -1,0 +1,25 @@
+.load-data {
+  background: var(--lara-blue-blue-50);
+  transition: .3s ease;
+  animation: opacityIn .5s;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1.5rem;
+
+  h2 {
+    font-family: var(--third-family);
+    font-weight: 900;
+    font-size: 1.75rem;
+    line-height: 1.21429;
+    color: #495057;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+  }
+}
